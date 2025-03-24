@@ -7,6 +7,10 @@
 body {
     background-color: #f3eae3;
     margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .section1 {
@@ -16,18 +20,20 @@ body {
     align-items: center;
     background-color: white;
     width: 90%;
-    margin-top: 3.5rem;
-    margin-left: 1rem;
+    height: 60%;
     border-radius: .5rem;
 }
 
 .imgbottle {
     max-width: 100%;
-    height: auto;
+    height: 100%;
+    overflow: hidden;
 }
+
 .imgbottle img {
     max-width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
 }
 
 .container {
@@ -79,4 +85,22 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 3rem;
+}
+
+/* Media Queries for Desktop (>= 720px) */
+@media only screen and (min-width: 750px) {
+    body {
+        background-color: #f3eae3;
+    }
+
+    .section1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        width: 70%;
+        border-radius: .5rem;
+        max-width: 900px;
+    }
 }

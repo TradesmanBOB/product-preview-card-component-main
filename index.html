@@ -19,7 +19,10 @@
 <body>
 <section class="section1">
   <div class="imgbottle">
-    <img src="images/image-product-mobile.jpg" alt="Image of the Essense Eau De Parfun Bottle">
+    <!-- desktop image will be used when larger/equal to 720px -->
+    <source media="(min-width: 720px)" srcset="images/image-product-desktop.jpg">
+    <!-- Mobile image will be used when smaller or equal to 719px -->
+    <img src="images/image-product-mobile.jpg" alt="Image of the Essense Eau De Parfum Bottle">
   </div>
   <div class="container">
     <h2 class="h2-1">Perfume</h2>
