@@ -13,6 +13,12 @@ body {
     height: 100vh;
 }
 
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .section1 {
     display: flex;
     flex-direction: column;
@@ -95,13 +101,18 @@ body {
 
 .CartButton:hover {
     background-color: #184131;
-    color: green;
 }
 
 /* Media Queries for Desktop (>= 720px) */
 @media only screen and (min-width: 750px) {
     body {
         background-color: #f3eae3;
+    }
+
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .section1 {
